@@ -27,6 +27,12 @@ const setupInput = function(conn) {
     if (key === 's') {
       conn.write("Move: down");
     };
+    if (key === 'p') {
+      conn.write("Say: GET OVER HERE");
+    };
+    if (key === 'o') {
+      conn.write("Say: FINISH HIM");
+    };
   });
 
   return stdin;
